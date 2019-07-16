@@ -15,13 +15,12 @@
   }
   section{
     /* overflow: hidden; */
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+   padding:5% 7%;
   }
 
 body{
    
-     /* Center the image */
+     
     
     
     font-family: 'Lato',sans-serif;
@@ -33,6 +32,10 @@ body{
     
     
 }
+ul{
+  list-style-type: none;
+}
+
 .locations a:visited,a:hover,a:active{
   color:#2ecc71;
 }
@@ -78,10 +81,24 @@ h2:after{
   margin-top:2rem;
 }
 
+nav ul li a:visited {
+  /* text-decoration: none; */
+   
+  color:black;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+}
+nav ul li a:hover {
+  /* text-decoration: none; */
+   
+  color:black;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+}
 nav ul li a {
   /* text-decoration: none; */
    
-  color: white;
+  color:black;
   font-size: 1.25rem;
   text-transform: uppercase;
 }
@@ -89,7 +106,7 @@ nav ul li a {
 nav ul {
   display: flex;
   justify-content: flex-end;
-  list-style-type: none; 
+  
 }
 nav ul li {
   margin: 1.5rem;
@@ -100,8 +117,15 @@ nav ul li {
 nav ul li:hover {
   border-bottom: solid aqua;
 }
+.sticky{
+  position: fixed;
+  background:white;
+  z-index: 10;
 
-.button{
+ width: 100vw;
+}
+
+.button:link,.button:visited{
   position: relative;
   border:1px solid aqua;
   border-radius:4rem;
@@ -146,10 +170,14 @@ color:aliceblue;
 border: 10px solid aqua;
 
 }
+.jquery{
+  font-size:400%;
+  color:rgba(0, 162, 255, 0.541);
+}
 
 a{
   text-decoration: none;
-  padding-bottom: 2rem;
+  /* padding-bottom: 2rem; */
 }
 .features-info {
   margin-top: 2rem;
@@ -179,7 +207,7 @@ a{
   margin-bottom: 1rem;
 }
 
-.steps{
+/* .steps{
   background:rgba(236, 236, 236, 0.5);
   padding-bottom: 5rem;
 }
@@ -195,7 +223,7 @@ a{
 }
 .steps-iphone {
   padding-left: 20%;
-  margin-top: 3%;
+  margin-top: 5%;
 }
 
 .steps-how-to {
@@ -203,7 +231,7 @@ a{
   font-size: 120%;
 
 }
-.steps-list div {
+.circle {
 margin-right:5%;
   font-size:120%;
   color:aqua;
@@ -218,32 +246,81 @@ text-align: center;
   padding-bottom: 12%;
 }
 .app-img{
-  /* width:10rem; */
+  
   height:4rem;
   margin-right:2rem;
   margin-top:1rem;
-  /* padding-bottom: 0.3rem; */
+  
+} */
+
+.steps-parent {
+  display: flex;
+}
+
+.steps-img {
+  width: 50%;
+  /* height: 100%; */
+}
+.steps-list {
+  /* display: flex; */
+}
+.steps-iphone {
+  padding-left: 20%;
+  margin-top: 3%;
+}
+
+.steps-how-to {
+  margin-top: 7%;
+  font-size: 120%;
+}
+.steps-list div {
+  margin-right: 5%;
+  font-size: 120%;
+  color: aqua;
+  border: 1px solid aqua;
+  text-align: center;
+  border-radius: 50%;
+  padding-top: 12px;
+  height: 55px;
+  width: 55px;
+  float: left;
+}
+.steps-list p {
+  padding-bottom: 12%;
+}
+
+.steps-how-to:last-child {
+  margin-bottom: 2rem;
+}
+
+.app-img {
+  
+  display: flex;
+  
+}
+.store {
+  height: 4rem;
+  margin-right: 2rem;
 }
 i{
   padding:0.5rem;
   color: aqua;
 }
-.availability{
+/* .availability{
   text-align: center;
 }
 .locations{
   margin-top:3rem;
   display:flex;
   text-align: center;
-  
-  /* margin-left:5rem;
-  margin-right: 5rem; */
+  padding-left:2rem;
+  padding-right:2rem;  
+
 }
 
 .locations div{
-  padding-left: 2rem;
-  padding-right: 2rem;
-  word-spacing: 0.25rem;
+  
+   word-spacing: 0.25rem;
 text-align: justify;
 font-size: 1rem;
 }
@@ -254,13 +331,13 @@ font-size: 1rem;
 }
 .loc i{
   color:#2ecc71;
-  margin-right:0.5rem;
+  padding-right:0.5rem;
 }
 
 .loc{
-  padding:2rem;
+   padding:2rem; 
   text-align: center;
-  margin: auto;
+   margin: auto; 
 }
 
 .loc a{
@@ -269,10 +346,46 @@ font-size: 1rem;
 }
 .loc a:hover{
   transform: scale(1.2);
+} */
+.city h2 {
+  margin-bottom: 3rem;
+}
+.cities-parent {
+  display: flex;
+}
+.cities-parent h3{
+  margin-top:1.5rem;
+  margin-bottom: 1.5rem;
+}
+.cities-child img {
+  width: 90%;
+}
+
+.cities-link {
+  display: flex;
+
+}
+.cities-link i {
+  color: #2ecc71;
+  padding-right: 0.5rem;
+  font-size: 120%;
+}
+.cities-link {
+  padding-bottom: 1rem;
+  /* line-height: 145%; */
+}
+.cities-link p {
+  vertical-align: center;
+}
+.cities-link a {
+  color: #2ecc71;
+  transition: transform 0.4s;
+}
+.cities-link a:hover {
+  transform: scale(1.2);
 }
 .our-reviews{
-  /* margin-bottom: 5rem; */
-  /* margin-top: 5rem; */
+  
   background:linear-gradient( rgba(0, 0, 0, 0.7),rgba(0, 0, 0.7) ) ,url(../image/pizza.jpg) no-repeat center fixed;
   background-size:cover;
   height: 100%;
@@ -283,19 +396,20 @@ font-size: 1rem;
 }
 .our-reviews h2{
   /* padding-top:5rem; */
-  padding-bottom: 4rem;
+  margin-bottom: 2.5rem;
   color:white;
 }
 .reviews{
   display:flex;
   font-style: italic;
+  justify-content: center;
   
   
 }
 .reviews-section{
-  margin: 5%;
+  padding-right: 5%;
   
-  /* margin: auto;  */
+
   font-size: 100%;
   text-align: justify;
   word-spacing: 0.5rem;
@@ -317,26 +431,24 @@ border-radius: 50%;
   line-height: 150%;
 
 }
-.membership{
+/* .membership{
   background:rgba(236, 236, 236, 0.5);
-  /* padding-top:5rem; */
-  /* padding-bottom: 5rem;  */
+  
 }
 .plans{
   display: flex;
   padding-top: 3rem;
-margin-left:20%;
-margin-right: 20%;
+padding-left:20%;
+padding-right: 20%;
 }
 
 .plan-type{
-   /* margin-left:10%;
-  margin-right: 2%;  */
+   
   border:2px solid white;
   background: white;
   border-radius: 8%;
   padding-right: 2%;
-  /* padding-left:1%; */
+  
   padding-top:1%;
   padding-bottom: 2%;
   margin-right:4%;
@@ -402,6 +514,64 @@ margin-right: 20%;
 }
 
 
+ */
+ .signup {
+  background-color: #f4f4f4;
+}
+.signup-parent {
+  display: flex;
+}
+.signup-child {
+  width: 100%;
+  height: 80%;
+  /* color:white; */
+  background-color: #fff;
+  margin-right: 4%;
+  /* padding: 2%; */
+
+  border-radius: 8%;
+}
+.signup-header {
+  padding: 8%;
+  border-bottom: 2px solid #f4f4f4;
+  line-height: 265%;
+  /* line-height:260%; */
+}
+.signup-header h3 {
+  font-weight: 100;
+  margin-bottom: 3%;
+}
+.signup-pricing {
+  color:aqua;
+}
+.signup-pricing span {
+  font-size: 336%;
+}
+.signup-pricing p {
+  color: #555;
+}
+
+.signup h2 {
+  margin-bottom: 7%;
+}
+.signup-features {
+  font-size: 123%;
+  line-height: 271%;
+  color:aqua;
+}
+
+.signup-features ul {
+  border-bottom: 2px solid#f4f4f4;
+  padding: 5%;
+  color: #555;
+}
+.signup-features i {
+  padding-right: 5%;
+  color:aqua;
+}
+.signup-button {
+  text-align: center;
+}
 
 
 .entry{
@@ -412,7 +582,7 @@ margin-right: 20%;
 }
 .form-child{
   width:50%; 
-  /* max-width: 50%;                       */
+  
 }
 input[type="text"],input[type="email"],select,textarea{
 border:2px solid gray;
@@ -441,47 +611,44 @@ margin-left: -17%;
   
 }
 footer{
- padding: 1.5rem;
- color:rgba(196, 196, 196, 0.897);
- background: #555;
+  background: rgb(58, 56, 56);
+  height: 18vh;;
 }
-.footer-child ul{
-  display: flex;
-  list-style-type: none;
-  
-  justify-content: flex-start;
-  /* padding-left:2rem;  */
+.social-link{
+  display:flex;
+  width:40%; 
+}
+.text-value{
+  padding-right:6%;
+}
+.footer-text{
+  display:flex;
+  width:70%;
+  padding-right:6%;
+}
+.footer-parent{
+  display:flex;
+  justify-content: space-between;
+  /* margin-top:2%; */
+  padding-top: 2.5%;    
+    padding-left: 4%;
+    transition: all 0.2s ease-out;
+    margin-bottom: 0.4%;
+}
+.text-value a,.icon-footer{
+  font-size:110%;
+  color:white;
+}
+.social-link li{
+  padding-right:10%;
+}
+.footer-p{
+  text-align:center;
+   /* padding-top:2%;  */
+  font-size:110%;
+}
 
+.footer-parent ul li:hover{
+  transform: scale(1.2);
+  display: inline-block;
 }
-.footer-child ul li{
-  padding:0 2rem 0 0;
-}
-.footer-icon ul{
-display: flex;
-list-style-type: none;
-justify-content: flex-end;
-/* padding-right: 2rem; */
-margin-top:-1.5rem;
-}
-.footer-icon ul li{
-  padding-right: 2rem ;
-}
-.copyright{
-text-align: center;
-}
-footer i{
-  color:rgba(196, 196, 196, 0.897);
-}
-footer ul li a{
-  color:rgba(196, 196, 196, 0.897);
-  transition: all 0.2s ease-out;
-}
-footer ul li a:hover{
-transform: scale(1.1);
-display: inline-block;
-/* color:gray; */
-
-}
-/* *{
-  border:1px solid black;
-} */
