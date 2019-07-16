@@ -32,9 +32,11 @@ body{
     
     
 }
+
 ul{
   list-style-type: none;
 }
+
 
 .locations a:visited,a:hover,a:active{
   color:#2ecc71;
